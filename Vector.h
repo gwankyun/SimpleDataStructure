@@ -4,6 +4,11 @@ template<typename T>
 class Vector
 {
 public:
+	Vector()
+	{
+		Vector(0);
+	}
+
 	Vector(int size) : _room(size), _size(0)
 	{
 		_data = new T[_room];
