@@ -29,14 +29,9 @@ public:
 		if (_size == _room)
 		{
 			extend();
-			_data[_size] = value;
-			_size++;
 		}
-		else
-		{
-			_data[_size] = value;
-			_size++;
-		}
+		_data[_size] = value;
+		_size++;
 	}
 
 	int size()
